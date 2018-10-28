@@ -16,3 +16,9 @@ app.get('/', (req, res) => {
         message: 'Hello world!'
     })
 })
+
+app.post('/register', (req, res) => {
+    res.send({
+        message: `${req.body.email} was registered!`
+    })
+})
